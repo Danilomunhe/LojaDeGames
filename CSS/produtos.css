@@ -10,7 +10,7 @@
 
 .header-produtos{
     height: 150px;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     justify-content: center;
     align-items: center;
