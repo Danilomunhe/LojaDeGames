@@ -5,7 +5,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(#001AFF, #000);
+    background: linear-gradient(#000,#001AFF);
 }
 
 .header-produtos{
