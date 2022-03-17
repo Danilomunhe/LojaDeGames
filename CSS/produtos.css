@@ -1,6 +1,4 @@
 
-
-
 .produtos{
     min-height: 100vh;
     display: flex;
@@ -26,10 +24,19 @@ h2{
     display: flex;
     justify-content: center;
 }
-/* .filtro-produtos{
+.filtro-produtos{
     width: 20%;
-    background-color: white;
-} */
+    background-color: black;
+    display: none;
+    flex-direction: column;
+}
+.filtro-produtos.exibir{
+    width: 20%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .cards{
     width: 80%;
     display: flex;
@@ -120,4 +127,113 @@ button:hover{
     0 0 50px 0 #001AFF,
     0 0 75px 0 #001AFF;
     color: white;
+}
+
+.pesquisar-produto{
+    margin-left: 10px;
+    width: 240px;
+    height: 50px;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 0 5px blue;
+    
+}
+.pesquisar-produto.active{
+    width: 240px;
+    height: 50px;
+    background-color: teal;
+    cursor: pointer;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.navDePesquisa{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+}
+.barraDePesquisa {
+    flex-grow: 1;
+    height: 50px;
+    margin-top: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2.5px dashed blue;
+    outline: none;
+    color: wheat;
+}
+.barraDePesquisa:focus{
+    border-bottom: 2.5px solid blue;
+}
+.botaoDePesquisa{
+    margin-top: 10px;
+    width: 140px;
+    height: 50px;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: all 1s linear;
+}
+.botaoDePesquisa:hover{
+    margin-top: 10px;
+    width: 140px;
+    height: 50px;
+    background-color: #00BFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+.cancelar-produto{
+    width: 240px;
+    height: 50px;
+    background-color: teal;
+    cursor: pointer;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.cancelar-produto.active2{
+    width: 240px;
+    height: 50px;
+    background-color: blue;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.categorias{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categorias ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.categorias ul li{
+    font-size: 2rem;
+    color: white;
+    transition: all 1s linear;
+}
+.categorias ul li:hover{
+    font-size: 2rem;
+    color: blue;
+    cursor: pointer;
 }

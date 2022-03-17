@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/menu.css">
     <link rel="stylesheet" href="CSS/banner.css">
     <link rel="stylesheet" href="CSS/maisVendidos.css">
     <link rel="stylesheet" href="CSS/produtos.css">
     <link rel="stylesheet" href="CSS/sobre.css">
+    <link rel="stylesheet" href="CSS/contatos.css">
     <script src="./JS/main.js" defer></script>
     <title>Dani Games</title>
 </head>
 <body>
-    <section class="banner">
-        <div class="header-banner">
-            <div class="menu">
-                <ul>
-                <li><a href="#">Home</a> </li>
-                <li><a href="">Promoções</a> </li>
-                <li><a href="#maisVendidos">Destaques</a> </li>
-                <li><a href="#sobre">Sobre</a> </li>
-                <li><a href="#produtos">Produtos</a> </li>
-                <li><a href="">Fale Conosco</a> </li>
+    <header>
+        <div class="menu-burger-container">
+            <i class="menu-burger"></i>
+        </div>
+        <nav class="menu">
+            <ul class="itens-menu"> 
+                <li><a href="#">Home</a></li>
+                <li><a href="#maisVendidos">Destaques</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
             </ul>
-            </div>
-    </div>
+        </nav>
+    </header>
+    <section class="banner">
         <div class="conteudo-banner">
-            
         </div>
     </section>
     <section class="maisVendidos" id="maisVendidos">
@@ -66,8 +68,29 @@
         <div class="header-produtos">
             <h2>Produtos</h2>
         </div>
+        <div class="pesquisar-produto" id="pesquisarProduto">
+            <i class="fas fa-search" id="lupa"></i>
+            <p id="texto">Filtrar produto</p>
+        </div>
+        <div class="cancelar-produto" id="cancelarProduto">
+            <i class="far fa-window-close"></i>
+            <p id="texto">Fechar filtro</p>
+        </div>
         <div class="container-produtos">
             <div class="filtro-produtos">
+                <div class="navDePesquisa">     
+                    <input type="search" class="barraDePesquisa" placeholder="Procure um produto">
+                    <input type="button" class="botaoDePesquisa" value="Pesquisar">
+            </div>
+            <div class="categorias">
+                <ul>
+                    <li>Ação</li>
+                    <li>Aventura</li>
+                    <li>Survivor Horror</li>
+                    <li>Multiplayer</li>
+                    <li>Guerra</li>
+                </ul>
+            </div>
             </div>
             <div class="cards">
             <!-- <div class="card-produto">
@@ -87,6 +110,34 @@
                         
             </div>
         </div>
+        </div>
+    </section>
+    <section class="contatos">
+        <div class="contatos-header">
+            <h2>Fale Conosco</h2>
+        </div>
+        <div class="contatos-container">
+            <div class="contatos-imagem">
+            </div>
+            <div class="contatos-form">
+                <div class="form-header">
+                    <h2>Deixe uma mensagem</h2>
+                </div>
+                <form>
+                    <div class="campos">
+                        <label>Nome:</label>
+                        <input type="text">
+                    </div>
+                    <div class="campos">
+                        <label>Email:</label>
+                        <input type="text">
+                    </div>
+                    <div class="campos">
+                        <label>Tipo de Mensagem:</label>
+                        <input type="text">
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 </body>

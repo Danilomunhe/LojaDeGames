@@ -150,6 +150,25 @@ function abrir() {
   function fechar() {
     document.querySelector(".menu-burger-container").classList.remove("active");
   }
-  document
-    .querySelector(".menu-burger-container")
-    .addEventListener("click", abrir);
+
+    const filtro = document.querySelector(".filtro-produtos")
+    const botaoFiltro = document.querySelector(".pesquisar-produto")
+    const cancelarFiltro = document.querySelector(".cancelar-produto")
+
+const abrirFiltro = ()=>{
+    filtro.classList.add('exibir')
+    botaoFiltro.classList.add('active')
+    cancelarFiltro.classList.add('active2')
+    
+    
+}
+
+const fecharFiltro = ()=>{
+    botaoFiltro.classList.remove("active")
+    filtro.classList.remove('exibir')
+    cancelarFiltro.classList.remove('active2')
+}
+
+document.querySelector(".menu-burger-container").addEventListener("click", abrir);
+document.getElementById('pesquisarProduto').addEventListener('click', abrirFiltro)
+document.getElementById('cancelarProduto').addEventListener('click', fecharFiltro)

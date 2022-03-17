@@ -1,0 +1,64 @@
+.contatos{
+    height: 100vh;
+    background: linear-gradient(#001AFF, #000);
+    display: flex;
+    flex-direction: column;
+}
+.contatos-header{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contatos-container{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.contatos-imagem{
+    width: 30%;
+    height: 80%;
+    background: url("../img/contatos.jpg");
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: #00F8;
+    background-blend-mode: darken;
+}
+.contatos-form{
+    display: flex;
+    width: 30%;
+    height: 80%;    
+    flex-direction: column;
+    align-items: center;
+  
+
+}
+
+.form-header{
+    height: 150px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+.campos{
+    width: 450px;
+    height: 40px;
+    margin-left: 10px;
+}
+.campos label{
+    font-size: 2rem;
+    color: ivory;
+}
+.campos input{
+    width: 70%;
+    height: inherit;
+}
