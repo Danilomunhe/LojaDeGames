@@ -31,10 +31,12 @@
 }
 .menu-burger-container.active .menu-burger::before{
     transform:rotate(-45deg);
+    background-color: blue;
 
 }
 .menu-burger-container.active .menu-burger::after{
     transform:rotate(45deg);
+    background-color: blue;
 }
 .menu-burger-container.active ~ .menu {
     right: 0rem;
